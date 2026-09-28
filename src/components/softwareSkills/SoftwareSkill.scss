@@ -8,12 +8,15 @@
   margin-top: 0px;
   text-align: center;
 }
-
+.software-skills-main-div  {
+  margin-top: 50px;
+}
 .software-skill-inline {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 60px;
   margin-bottom: 20px;
 }
+
 
 .software-skill-inline > i {
   color: $subTitle;
