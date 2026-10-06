@@ -90,22 +90,32 @@ export default function Achievement() {
               ‹
             </button>
 
-            <div className="achievement-cards-div">
-              {cards.slice(currentIndex, currentIndex + visibleCount).map((card, i) => (
-                <AchievementCard
-                  key={`${currentIndex}-${i}-${card.title}`}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.description,
-                    image: card.image,
-                    fallbackImage: card.fallbackImage,
-                    imageAlt: card.imageAlt,
-                    tech: card.tech,
-                    footer: card.footer
-                  }}
-                />
-              ))}
+            <div className="achievement-carousel-viewport">
+              <div
+                className="achievement-cards-track"
+                style={{
+                  "--cards-count": cards.length,
+                  "--visible-count": visibleCount,
+                  "--current-index": currentIndex
+                }}
+              >
+                {cards.map(card => (
+                  <div className="achievement-slide" key={card.title}>
+                    <AchievementCard
+                      isDark={isDark}
+                      cardInfo={{
+                        title: card.title,
+                        description: card.description,
+                        image: card.image,
+                        fallbackImage: card.fallbackImage,
+                        imageAlt: card.imageAlt,
+                        tech: card.tech,
+                        footer: card.footer
+                      }}
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
 
             <button
@@ -125,13 +135,14 @@ export default function Achievement() {
 
           <div className="achievement-carousel-dots" aria-label="Navigation des réalisations">
             {cards.map((card, index) => {
-              const isActive = index >= currentIndex && index < currentIndex + visibleCount;
+              const isActive = index === currentIndex;
+              const targetIndex = Math.min(index, maxIndex);
               return (
                 <button
                   type="button"
                   key={card.title}
                   className={isActive ? "achievement-carousel-dot active" : "achievement-carousel-dot"}
-                  onClick={() => setCurrentIndex(Math.min(index, maxIndex))}
+                  onClick={() => setCurrentIndex(targetIndex)}
                   aria-label={`Afficher ${card.title}`}
                 />
               );
