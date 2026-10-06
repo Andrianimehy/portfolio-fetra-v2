@@ -7,8 +7,8 @@
   height: 26px;
 }
 
-/* Fix visible slider checkbox */
-input {
+/* Keep the checkbox scaling limited to the theme toggle only. */
+.switch > input {
   transform: scale(0.5);
 }
 

@@ -9,7 +9,7 @@ export default function Footer() {
     <Fade bottom duration={1000} distance="5px">
       <div className="footer-div">
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-          Portfolio de Fetra Razafindrakoto · Développeur Full Stack JavaScript
+          Création web · E-commerce · Solutions digitales sur mesure <br /> © 2026 Athelstan Agency. Tous droits réservés.
         </p>
       </div>
     </Fade>

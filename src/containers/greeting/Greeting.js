@@ -12,7 +12,7 @@ export default function Greeting() {
 
     const timer = setInterval(() => {
       setActiveSlide(current => (current + 1) % heroSlider.length);
-    }, 6000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, []);

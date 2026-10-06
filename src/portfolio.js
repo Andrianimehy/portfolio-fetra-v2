@@ -33,14 +33,14 @@ const heroSlider = [
     eyebrow: "Développement web",
     title: "Des solutions web sur mesure",
     description:
-      "Je conçois et développe des applications web modernes, des sites e-commerce performants et des solutions digitales adaptées à vos besoins.",
-    primaryLabel: "Découvrir mes réalisations",
+      "On conçois et développe des applications web modernes, des sites e-commerce performants et des solutions digitales adaptées à vos besoins.",
+    primaryLabel: "Découvrir nos réalisations",
     primaryHref: "#projects",
-    secondaryLabel: "Me contacter",
+    secondaryLabel: "Nous contacter",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-slider-bg.png"),
-    backgroundPosition: "right center",
-    backgroundSize: "auto 100%"
+    background: require("./assets/images/hero-web.jpg"),
+    backgroundPosition: "center center",
+    backgroundSize: "cover"
   },
   {
     id: "hero-2",
@@ -48,13 +48,13 @@ const heroSlider = [
     title: "Du frontend au backend",
     description:
       "React, TypeScript, Node.js, Express, Supabase et REST API pour construire des applications fiables, rapides et évolutives.",
-    primaryLabel: "Voir mes compétences",
+    primaryLabel: "Voir nos compétences",
     primaryHref: "#skills",
     secondaryLabel: "Demander un devis",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-slider-bg.png"),
-    backgroundPosition: "68% center",
-    backgroundSize: "auto 108%"
+    background: require("./assets/images/hero-ecommerce.jpg"),
+    backgroundPosition: "center center",
+    backgroundSize: "cover"
   },
   {
     id: "hero-3",
@@ -62,13 +62,13 @@ const heroSlider = [
     title: "Des expériences digitales qui convertissent",
     description:
       "Plus de 20 ans d'expérience dans le web et l'e-commerce, de l'intégration à la création de solutions modernes et sur mesure.",
-    primaryLabel: "Voir mes projets",
+    primaryLabel: "Voir nos projets",
     primaryHref: "#projects",
     secondaryLabel: "Parlons de votre projet",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-slider-bg.png"),
-    backgroundPosition: "82% center",
-    backgroundSize: "auto 112%"
+    background: require("./assets/images/hero-fullstack.jpg"),
+    backgroundPosition: "center center",
+    backgroundSize: "cover"
   }
 ];
 
@@ -369,8 +369,8 @@ const contactInfo = {
   title: emoji("Travaillons ensemble 🤝"),
   subtitle:
     "Vous avez un projet web, une application Full Stack, une boutique e-commerce ou besoin de faire évoluer un projet existant ? Parlons-en.",
-  number: "",
-  email_address: ""
+  number: "+261 34 14 587 73",
+  email_address: "fetranirina@gmail.com"
 };
 
 // Twitter

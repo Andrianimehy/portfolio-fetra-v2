@@ -50,19 +50,19 @@ function Header() {
           )}
           
             <li>
-              <a href="#blogs">Qui sommes nous ?</a>
+              <a href="#about">Qui sommes nous ?</a>
             </li>
          
           
           <li>
             <a href="#contact">Contact</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+          {/*<li>
+             eslint-disable-next-line jsx-a11y/anchor-is-valid 
             <a>
               <ToggleSwitch />
             </a>
-          </li>
+          </li>*/}
         </ul>
       </header>
     </Headroom>

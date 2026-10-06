@@ -12,6 +12,7 @@ import Podcast from "./podcast/Podcast";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
+import About from "./about/About";
 import SplashScreen from "./splashScreen/SplashScreen";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
@@ -59,6 +60,7 @@ const Main = () => {
             <Talks />
             <Twitter />
             <Podcast />
+            <About />
             <Profile />
             <Footer />
             <ScrollToTopButton />
