@@ -223,8 +223,7 @@ const achievementSection = {
       title: "Feelingz Beauty",
       description:
         "Boutique e-commerce développée avec Shopify, orientée beauté et expérience d'achat.",
-      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://feelingz-beauty.myshopify.com/",
-      fallbackImage: require("./assets/images/project-feelingz.png"),
+      image: require("./assets/images/project-feelingz.png"),
       imageAlt: "Feelingz Beauty — Shopify",
       tech: "Shopify",
       footer: [
@@ -234,9 +233,8 @@ const achievementSection = {
     {
       title: "Le Grand Barbershop",
       description:
-        "Application web moderne développée avec React et Node.js, avec catalogue, gestion des produits et déploiement Vercel.",
-      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://legrand-barbershop.vercel.app/",
-      fallbackImage: require("./assets/images/project-legrand.png"),
+        "Application web moderne développée avec React et Node.js, avec catalogue, gestion des produits.",
+       image: require("./assets/images/project-barbershop.png"),
       imageAlt: "Le Grand Barbershop — React / Node.js",
       tech: "React · Node.js",
       footer: [
@@ -245,12 +243,11 @@ const achievementSection = {
       ]
     },
     {
-      title: "Urban Shop",
+      title: "FAAME",
       description:
         "Boutique e-commerce développée avec WordPress et WooCommerce, avec présentation des produits et parcours d'achat.",
-      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://urban-shop.infy.click/",
-      fallbackImage: require("./assets/images/project-urban-shop.png"),
-      imageAlt: "Urban Shop — WooCommerce",
+       image: require("./assets/images/project-faame.png"),
+      imageAlt: "FAAME — WooCommerce",
       tech: "WordPress · WooCommerce",
       footer: [
         {name: "Voir le site", url: "https://urban-shop.infy.click/"}
@@ -260,8 +257,7 @@ const achievementSection = {
       title: "Maison Délice",
       description:
         "Application e-commerce développée avec React, TypeScript et Supabase : catalogue, panier, commandes et administration.",
-      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://maison-delice-one.vercel.app/",
-      fallbackImage: require("./assets/images/project-maison-delice.png"),
+       image: require("./assets/images/project-delice.png"),
       imageAlt: "Maison Délice — React / Node.js / Supabase",
       tech: "React · TypeScript · Supabase",
       footer: [
@@ -272,8 +268,7 @@ const achievementSection = {
       title: "Fanamby",
       description:
         "Site institutionnel pour une organisation engagée dans la conservation de la biodiversité et le développement durable à Madagascar.",
-      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://fanamby.org/",
-      fallbackImage: require("./assets/images/project-fanamby.png"),
+       image: require("./assets/images/project-fanamby.png"),
       imageAlt: "Fanamby — WordPress",
       tech: "WordPress",
       footer: [
