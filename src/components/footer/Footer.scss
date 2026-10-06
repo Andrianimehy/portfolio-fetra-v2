@@ -1,15 +1,5 @@
 @import "../../_globalColor";
-
-.footer-text {
-  text-align: center;
-  color: $subTitle !important;    font-size: 12px;
-}
-
-.dark-mode {
-  color: $textColorDark !important;
-}
-
-.footer-div {
-  margin-top: 2rem;
-  padding-bottom: 1rem;
-}
+.footer-text { text-align:center; color:$subTitle !important; font-size:12px; line-height:1.7; }
+.dark-mode { color:$textColorDark !important; }
+.footer-div { margin-top:1rem; padding:8px 20px 1.2rem; }
+@media (max-width:650px) { .footer-text { font-size:11px; } }

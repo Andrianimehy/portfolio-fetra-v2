@@ -1,47 +1,27 @@
 @import "../../_globalColor";
 
 .main-button {
-  background-color: $buttonColor;
-  border: solid 1px $buttonColor;
-  color: $textColorDark;
-  font-weight: 700;
-  width: max-content;
-  padding: 13px 22px;
-  margin-right: 50px;
-  text-transform: uppercase;
-  border-radius: 6px;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-top: 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out 0s;
+  background:linear-gradient(135deg,$buttonColor,#7b35ff);
+  border:1px solid rgba(255,255,255,.08);
+  color:$textColorDark;
+  font-weight:700;
+  width:max-content;
+  padding:14px 22px;
+  margin-right:50px;
+  text-transform:uppercase;
+  border-radius:7px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  margin-top:20px;
+  font-size:.88rem;
+  letter-spacing:.1px;
+  cursor:pointer;
+  transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  box-shadow:0 8px 20px rgba(85,25,139,.2);
 }
-.main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
-  transform: translateY(-3px);
-}
-.project-button {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.project-button > .main-button {
-  margin-right: 0 !important;
-}
-/* Media Query */
-@media (max-width: 768px) {
-  .main-button {
-    font-size: 0.938rem;
-    padding: 12px 18px;
-    margin-right: 0px;
-  }
-}
-@media (max-width: 320px) {
-  .main-button {
-    font-size: 0.75rem;
-  }
-}
+.main-button:hover { background:linear-gradient(135deg,#7b35ff,$buttonHover); color:#fff; transform:translateY(-3px); box-shadow:0 12px 24px rgba(85,25,139,.28); }
+.project-button { display:flex; justify-content:center; margin-top:20px; }
+.project-button > .main-button { margin-right:0 !important; }
+@media (max-width:768px) { .main-button { font-size:.82rem; padding:12px 17px; margin-right:0; } }
+@media (max-width:320px) { .main-button { font-size:.75rem; } }

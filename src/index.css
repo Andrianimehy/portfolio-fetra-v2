@@ -22,7 +22,7 @@ body {
 }
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font: 16px / 1.5 Montserrat, "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,3 +34,6 @@ body {
     line-height: normal;
   }
 }
+
+html, body, #root { width:100%; min-height:100%; overflow-x:hidden; }
+button, input, select, textarea { font: inherit; }

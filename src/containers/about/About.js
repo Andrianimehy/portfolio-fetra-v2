@@ -7,7 +7,7 @@ export default function About() {
   const {isDark} = useContext(StyleContext);
 
   return (
-    <Fade bottom duration={1000} distance="20px">
+    <Fade bottom duration={900} distance="20px">
       <section className="main about-section" id="about">
         <div className="about-header">
           <span className="about-eyebrow">ATHELSTAN AGENCY</span>
@@ -30,6 +30,13 @@ export default function About() {
           </div>
         </div>
 
+        <div className="about-highlights">
+          <article><strong>Web &amp; E-commerce</strong><span>Sites vitrines, boutiques et plateformes métier.</span></article>
+          <article><strong>Sur mesure</strong><span>Des solutions adaptées à vos objectifs et à votre identité.</span></article>
+          <article><strong>Expérience</strong><span>Une expertise construite sur plus de 20 ans de projets web.</span></article>
+          <article><strong>Accompagnement</strong><span>Conception, mise en ligne, optimisation et évolution.</span></article>
+        </div>
+
         <div className="about-process">
           <article className="about-process-card">
             <span>01</span>
@@ -46,6 +53,14 @@ export default function About() {
             <h3>Faire évoluer</h3>
             <p>Nous optimisons, maintenons et faisons grandir votre solution dans le temps.</p>
           </article>
+        </div>
+
+        <div className="about-cta">
+          <div>
+            <span>UN PROJET EN TÊTE ?</span>
+            <h2>Transformons votre idée en une solution digitale performante.</h2>
+          </div>
+          <a href="#contact">Parlons de votre projet <span>→</span></a>
         </div>
       </section>
     </Fade>

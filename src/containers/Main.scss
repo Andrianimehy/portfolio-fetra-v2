@@ -1,32 +1,15 @@
 @import "../_globalColor";
 
-.dark-mode {
-  background-color: $darkBackground;
-  color: white;
-  transition: "0.1s";
-}
+.dark-mode { background-color:$darkBackground; color:white; transition:background-color .2s ease,color .2s ease; }
 
-.react-reveal 
- {
-    opacity: 0;
-    margin: 40px auto;
-    width: 85%;
-}
-.react-reveal.skillos,  
-.react-reveal.hero-slider {
-    opacity: 0;
-    margin:0 auto;
-    width: 100%;
-}
+.react-reveal { opacity:0; margin:20px auto; width:85%; }
+.react-reveal.skillos, .react-reveal.hero-slider { opacity:0; margin:0 auto; width:100%; }
+.dark-mode.main { margin:auto; width:85%; }
+.react-reveal.skills-container, .skills-main-div { display:none; }
+.react-reveal.footer-div { margin:0 auto; }
 
-.dark-mode.main{
-    margin: auto;
-    width: 85%;
-}
-.react-reveal.skills-container, 
-.skills-main-div {
-    display: none;
-}
-.react-reveal.footer-div {
-    margin: 0 auto;
+@media (max-width:768px) {
+  .react-reveal { width:92%; margin:14px auto; }
+  .react-reveal.hero-slider { width:100%; margin:0 auto; }
+  .dark-mode.main { width:92%; }
 }

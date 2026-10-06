@@ -87,26 +87,26 @@ const socialMediaLinks = {
 // Skills Section
 const skillsSection = {
   title: "Nos expertises",
-  subTitle: "WEB · E-COMMERCE · FULL STACK · SOLUTIONS DIGITALES",
+  subTitle: "Des expertises complémentaires pour créer, moderniser et faire évoluer vos projets digitaux.",
 
   skills: [
     emoji(
-      "⚡ Applications web modernes avec React, TypeScript, Node.js et Express"
+      "⚡ Applications web modernes avec React, TypeScript, Node.js et Express, pensées pour durer."
     ),
     emoji(
-      "⚡ Interfaces modernes, responsives et performantes pensées pour vos utilisateurs"
+      "⚡ Interfaces modernes, responsives et performantes, conçues pour offrir une expérience fluide sur tous les écrans."
     ),
     emoji(
-      "⚡ APIs REST, authentification, intégrations et services backend adaptés à votre projet"
+      "⚡ APIs REST, authentification et intégrations pour connecter efficacement vos outils et services."
     ),
     emoji(
-      "⚡ Bases de données et backend avec Supabase, PostgreSQL et sécurité RLS"
+      "⚡ Bases de données et backend avec Supabase, PostgreSQL et une sécurité adaptée à vos besoins."
     ),
     emoji(
-      "⚡ Création et évolution de boutiques Shopify, Magento, PrestaShop et WooCommerce"
+      "⚡ Création, personnalisation et évolution de boutiques Shopify, Magento, PrestaShop et WooCommerce."
     ),
     emoji(
-      "⚡ Refonte, intégration, optimisation et maintenance de projets web existants"
+      "⚡ Refonte, optimisation et maintenance de projets web existants, sans repartir de zéro."
     )
   ],
 
@@ -227,31 +227,31 @@ const bigProjects = {
       image: require("./assets/images/expertise-fullstack.png"),
       projectName: "Développement Full Stack",
       projectDesc:
-        "Applications modernes avec React, TypeScript, Node.js, Express et REST API."
+        "Applications web modernes avec React, TypeScript, Node.js et APIs REST."
     },
     {
       image: require("./assets/images/expertise-ecommerce.png"),
       projectName: "E-commerce",
       projectDesc:
-        "Shopify, Magento 1/2, PrestaShop et WooCommerce : création, personnalisation et maintenance."
+        "Création, personnalisation et maintenance de boutiques Shopify, Magento, PrestaShop et WooCommerce."
     },
     {
       image: require("./assets/images/expertise-api.png"),
       projectName: "Backend & API",
       projectDesc:
-        "Services backend, APIs REST, authentification et intégration de services externes."
+        "APIs REST, authentification et intégration de services externes fiables et évolutives."
     },
     {
       image: require("./assets/images/expertise-database.png"),
       projectName: "Supabase & PostgreSQL",
       projectDesc:
-        "Bases de données, authentification, stockage et sécurité avec Supabase et PostgreSQL."
+        "Backend, base de données, authentification et sécurité avec Supabase et PostgreSQL."
     },
     {
       image: require("./assets/images/expertise-frontend.png"),
       projectName: "Frontend moderne",
       projectDesc:
-        "Interfaces responsives et performantes avec React, JavaScript, HTML5, CSS3 et Tailwind CSS."
+        "Interfaces responsives et performantes avec React, JavaScript, HTML5 et CSS3."
     }
   ],
 
@@ -262,13 +262,13 @@ const bigProjects = {
 const achievementSection = {
   title: "Nos réalisations",
   subtitle:
-    "Des projets concrets conçus pour répondre à des objectifs business, améliorer l'expérience utilisateur et faire évoluer votre activité.",
+    "Des projets concrets pensés pour répondre à des besoins business, améliorer l'expérience utilisateur et faire avancer votre activité.",
 
   achievementsCards: [
     {
       title: "Feelingz Beauty",
       description:
-        "Boutique e-commerce Shopify conçue pour présenter les produits, simplifier le parcours d'achat et renforcer l'image de marque.",
+        "Boutique Shopify conçue pour valoriser les produits, simplifier l'achat et renforcer l'image de marque.",
       image: require("./assets/images/project-feelingz.png"),
       imageAlt: "Feelingz Beauty — Shopify",
       tech: "Shopify",
@@ -279,7 +279,7 @@ const achievementSection = {
     {
       title: "Le Grand Barbershop",
       description:
-        "Application web moderne avec catalogue et gestion des produits, développée pour offrir une expérience rapide et claire.",
+        "Application web moderne avec catalogue et gestion des produits, pensée pour une expérience rapide et claire.",
        image: require("./assets/images/project-barbershop.png"),
       imageAlt: "Le Grand Barbershop — React / Node.js",
       tech: "React · Node.js",
@@ -290,7 +290,7 @@ const achievementSection = {
     {
       title: "FAAME",
       description:
-        "Site corporate WordPress avec présentation de l'organisation, espace membres, formulaire de contact et collecte de dons en ligne.",
+        "Site corporate WordPress avec espace membres, formulaire de contact et collecte de dons en ligne.",
        image: require("./assets/images/project-faame.png"),
       imageAlt: "FAAME — WooCommerce",
       tech: "WordPress",
@@ -299,7 +299,7 @@ const achievementSection = {
     {
       title: "Maison Délice",
       description:
-        "Plateforme e-commerce complète avec catalogue, panier, commandes et administration, développée avec React, TypeScript et Supabase.",
+        "Plateforme e-commerce complète avec catalogue, panier, commandes et administration sous React, TypeScript et Supabase.",
        image: require("./assets/images/project-delice.png"),
       imageAlt: "Maison Délice — React / Node.js / Supabase",
       tech: "React · TypeScript · Supabase",
@@ -310,7 +310,7 @@ const achievementSection = {
     {
       title: "Fanamby",
       description:
-        "Site institutionnel WordPress dédié à la biodiversité et au développement durable à Madagascar, avec une présentation claire des actions et projets.",
+        "Site institutionnel WordPress dédié à la biodiversité et au développement durable à Madagascar.",
        image: require("./assets/images/project-fanamby.png"),
       imageAlt: "Fanamby — WordPress",
       tech: "WordPress",

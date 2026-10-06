@@ -1,154 +1,49 @@
 @import "../../_globalColor";
 
-.about-section {
-  padding-top: 70px;
-  padding-bottom: 80px;
+.about-section { padding-top:60px; padding-bottom:45px; }
+.about-header { text-align:center; margin-bottom:36px; }
+.about-eyebrow { display:inline-block; margin-bottom:10px; color:$buttonColor; font-size:12px; font-weight:800; letter-spacing:2.5px; }
+.about-title { font-size:52px; font-weight:500; margin:0 0 10px; }
+.about-subtitle { font-size:17px; text-transform:none; }
+.about-intro { max-width:1100px; margin:0 auto 24px; padding:30px 34px; display:grid; grid-template-columns:1fr 210px; gap:36px; align-items:center; border-radius:18px; background:$lightBackground2; box-shadow:0 10px 35px rgba(0,0,0,.07); border:1px solid rgba(123,53,255,.08); }
+.dark-mode .about-intro { background:#202532; border-color:rgba(255,255,255,.07); }
+.about-intro h2 { margin:0 0 11px; font-size:27px; font-weight:600; }
+.about-intro p { margin:0; color:$subTitle; font-size:15px; line-height:1.75; }
+.about-experience { display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px 12px; border-left:1px solid rgba(123,53,255,.22); text-align:center; }
+.about-experience strong { color:$buttonColor; font-size:56px; line-height:1; }
+.about-experience span { margin-top:7px; color:$subTitle; font-size:12px; line-height:1.45; }
+
+.about-highlights { max-width:1100px; margin:0 auto 24px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+.about-highlights article { padding:18px 17px; border:1px solid rgba(123,53,255,.11); border-radius:12px; background:rgba(123,53,255,.025); }
+.dark-mode .about-highlights article { border-color:rgba(255,255,255,.07); background:#171c28; }
+.about-highlights strong { display:block; margin-bottom:7px; font-size:14px; color:inherit; }
+.about-highlights span { display:block; color:$subTitle; font-size:12px; line-height:1.55; }
+
+.about-process { max-width:1100px; margin:0 auto 28px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.about-process-card { padding:24px; border:1px solid rgba(123,53,255,.12); border-radius:15px; background:rgba(123,53,255,.035); }
+.dark-mode .about-process-card { border-color:rgba(255,255,255,.08); background:#171c28; }
+.about-process-card > span { color:$buttonColor; font-size:12px; font-weight:800; letter-spacing:1.5px; }
+.about-process-card h3 { margin:10px 0 7px; font-size:20px; }
+.about-process-card p { margin:0; color:$subTitle; font-size:14px; line-height:1.65; }
+
+.about-cta { max-width:1100px; margin:0 auto; padding:24px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px; border:1px solid rgba(123,53,255,.18); border-radius:16px; background:linear-gradient(110deg,rgba(123,53,255,.1),rgba(123,53,255,.035)); }
+.dark-mode .about-cta { background:linear-gradient(110deg,rgba(123,53,255,.16),rgba(23,28,40,.8)); }
+.about-cta > div > span { color:$buttonColor; font-size:10px; font-weight:800; letter-spacing:2px; }
+.about-cta h2 { margin:6px 0 0; max-width:690px; font-size:22px; line-height:1.35; font-weight:600; }
+.about-cta a { flex:0 0 auto; display:inline-flex; align-items:center; gap:10px; padding:13px 18px; border-radius:8px; background:$buttonColor; color:#fff; text-decoration:none; font-size:13px; font-weight:700; transition:.2s ease; }
+.about-cta a:hover { transform:translateY(-2px); background:$buttonHover; }
+.about-cta a span { font-size:17px; }
+
+@media (max-width:900px) { .about-highlights { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:768px) {
+  .about-section { padding-top:50px; padding-bottom:30px; }
+  .about-title { font-size:40px; }
+  .about-intro { grid-template-columns:1fr; padding:25px 22px; gap:20px; }
+  .about-intro h2 { font-size:24px; }
+  .about-experience { border-left:0; border-top:1px solid rgba(123,53,255,.22); padding-top:20px; }
+  .about-process { grid-template-columns:1fr; gap:12px; }
+  .about-cta { flex-direction:column; align-items:flex-start; padding:22px; }
+  .about-cta h2 { font-size:20px; }
+  .about-cta a { width:100%; justify-content:center; }
 }
-
-.about-header {
-  text-align: center;
-  margin-bottom: 45px;
-}
-
-.about-eyebrow {
-  display: inline-block;
-  margin-bottom: 12px;
-  color: $buttonColor;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2.5px;
-}
-
-.about-title {
-  font-size: 52px;
-  font-weight: 500;
-  margin: 0 0 12px;
-}
-
-.about-subtitle {
-  font-size: 17px;
-  text-transform: none;
-}
-
-.about-intro {
-  max-width: 1100px;
-  margin: 0 auto 32px;
-  padding: 36px 40px;
-  display: grid;
-  grid-template-columns: 1fr 230px;
-  gap: 40px;
-  align-items: center;
-  border-radius: 18px;
-  background: $lightBackground2;
-  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
-}
-
-.dark-mode .about-intro {
-  background: #202532;
-}
-
-.about-intro h2 {
-  margin: 0 0 14px;
-  font-size: 29px;
-  font-weight: 600;
-}
-
-.about-intro p {
-  margin: 0;
-  color: $subTitle;
-  font-size: 16px;
-  line-height: 1.85;
-}
-
-.about-experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 25px 15px;
-  border-left: 1px solid rgba(123, 53, 255, 0.22);
-  text-align: center;
-}
-
-.about-experience strong {
-  color: $buttonColor;
-  font-size: 58px;
-  line-height: 1;
-}
-
-.about-experience span {
-  margin-top: 8px;
-  color: $subTitle;
-  font-size: 13px;
-  line-height: 1.5;
-}
-
-.about-process {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.about-process-card {
-  padding: 28px;
-  border: 1px solid rgba(123, 53, 255, 0.12);
-  border-radius: 15px;
-  background: rgba(123, 53, 255, 0.035);
-}
-
-.dark-mode .about-process-card {
-  border-color: rgba(255, 255, 255, 0.08);
-  background: #171c28;
-}
-
-.about-process-card > span {
-  color: $buttonColor;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-}
-
-.about-process-card h3 {
-  margin: 12px 0 8px;
-  font-size: 21px;
-}
-
-.about-process-card p {
-  margin: 0;
-  color: $subTitle;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-  .about-section {
-    padding-top: 55px;
-    padding-bottom: 60px;
-  }
-
-  .about-title {
-    font-size: 40px;
-  }
-
-  .about-intro {
-    grid-template-columns: 1fr;
-    padding: 27px 24px;
-    gap: 24px;
-  }
-
-  .about-intro h2 {
-    font-size: 24px;
-  }
-
-  .about-experience {
-    border-left: 0;
-    border-top: 1px solid rgba(123, 53, 255, 0.22);
-    padding-top: 22px;
-  }
-
-  .about-process {
-    grid-template-columns: 1fr;
-  }
-}
+@media (max-width:520px) { .about-highlights { grid-template-columns:1fr; } }
