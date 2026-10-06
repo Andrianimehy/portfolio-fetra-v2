@@ -1,69 +1,99 @@
-import React, {useContext} from "react";
+import React, {useEffect, useState} from "react";
 import {Fade} from "react-reveal";
-import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
+import {heroSlider, greeting} from "../../portfolio";
 
 export default function Greeting() {
-  const {isDark} = useContext(StyleContext);
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    if (heroSlider.length < 2) return undefined;
+
+    const timer = setInterval(() => {
+      setActiveSlide(current => (current + 1) % heroSlider.length);
+    }, 6000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   if (!greeting.displayGreeting) {
     return null;
   }
+
+  const goToSlide = index => {
+    setActiveSlide((index + heroSlider.length) % heroSlider.length);
+  };
+
+  const current = heroSlider[activeSlide] || heroSlider[0];
+
   return (
-    <Fade bottom duration={1000} distance="40px">
-      <div className="greet-main" id="greeting">
-        <div className="greeting-main">
-          <div className="greeting-text-div">
-            <div>
-              <h1
-                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
-              >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
-              </h1>
-              <p
-                className={
-                  isDark
-                    ? "dark-mode greeting-text-p"
-                    : "greeting-text-p subTitle"
-                }
-              >
-                {greeting.subTitle}
-              </p>
-              <div id="resume" className="empty-div"></div>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Demander un devis" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
-              </div>
+    <Fade bottom duration={700} distance="20px">
+      <section className="hero-slider" id="greeting">
+        <div className="hero-slider-track">
+          {heroSlider.map((slide, index) => (
+            <div
+              className={`hero-slide ${index === activeSlide ? "is-active" : ""}`}
+              key={slide.id}
+              aria-hidden={index !== activeSlide}
+              style={{
+                backgroundImage: `linear-gradient(90deg, rgba(7, 12, 28, 0.98) 0%, rgba(7, 12, 28, 0.90) 34%, rgba(7, 12, 28, 0.38) 62%, rgba(7, 12, 28, 0.12) 100%), url(${slide.background})`,
+                backgroundPosition: slide.backgroundPosition || "right center",
+                backgroundSize: slide.backgroundSize || "auto 100%"
+              }}
+            />
+          ))}
+        </div>
+
+        <button
+          type="button"
+          className="hero-slider-arrow hero-slider-arrow-prev"
+          onClick={() => goToSlide(activeSlide - 1)}
+          aria-label="Slide précédent"
+        >
+          ‹
+        </button>
+
+        <div className="hero-slider-content">
+          <div className="hero-slider-copy" key={current.id}>
+            {current.eyebrow && (
+              <div className="hero-slider-eyebrow">{current.eyebrow}</div>
+            )}
+            <h1>{current.title}</h1>
+            <p>{current.description}</p>
+            <div className="hero-slider-actions">
+              <Button text={current.primaryLabel} href={current.primaryHref} />
+              {current.secondaryLabel && (
+                <a className="hero-slider-secondary" href={current.secondaryHref}>
+                  {current.secondaryLabel}
+                </a>
+              )}
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
-              <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
-              ></img>
-            )}
-          </div>
         </div>
-      </div>
+
+        <button
+          type="button"
+          className="hero-slider-arrow hero-slider-arrow-next"
+          onClick={() => goToSlide(activeSlide + 1)}
+          aria-label="Slide suivant"
+        >
+          ›
+        </button>
+
+        <div className="hero-slider-dots" aria-label="Navigation du slider">
+          {heroSlider.map((slide, index) => (
+            <button
+              type="button"
+              key={slide.id}
+              className={`hero-slider-dot ${index === activeSlide ? "is-active" : ""}`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Afficher la slide ${index + 1}`}
+              aria-current={index === activeSlide ? "true" : undefined}
+            />
+          ))}
+        </div>
+      </section>
     </Fade>
   );
 }

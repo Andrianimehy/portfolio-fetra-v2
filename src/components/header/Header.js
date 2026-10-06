@@ -31,7 +31,7 @@ function Header() {
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
           <span className="grey-color"> &lt;</span>
-          <span className="logo-name">{greeting.username}</span>
+          <span className="logo-name">Athelstan Agency</span>
           <span className="grey-color">/&gt;</span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
@@ -43,16 +43,7 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
-          {viewSkills && (
-            <li>
-              <a href="#skills">Compétences</a>
-            </li>
-          )}
-          {viewExperience && (
-            <li>
-              
-            </li>
-          )}
+          
           {viewOpenSource && (
             <li>
               <a href="#opensource">Projets</a>
@@ -68,21 +59,12 @@ function Header() {
               <a href="#achievements">Réalisations</a>
             </li>
           )}
-          {viewBlog && (
+          
             <li>
-              <a href="#blogs">Blog</a>
+              <a href="#blogs">Qui sommes nous ?</a>
             </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Interventions</a>
-            </li>
-          )}
-          {viewResume && (
-            <li>
-              <a href="#resume">Parcours</a>
-            </li>
-          )}
+         
+          
           <li>
             <a href="#contact">Contact</a>
           </li>

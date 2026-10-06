@@ -26,6 +26,52 @@ const greeting = {
   displayGreeting: true
 };
 
+// Hero Slider — les textes et les images sont modifiables ici
+const heroSlider = [
+  {
+    id: "hero-1",
+    eyebrow: "Développement web",
+    title: "Des solutions web sur mesure",
+    description:
+      "Je conçois et développe des applications web modernes, des sites e-commerce performants et des solutions digitales adaptées à vos besoins.",
+    primaryLabel: "Découvrir mes réalisations",
+    primaryHref: "#projects",
+    secondaryLabel: "Me contacter",
+    secondaryHref: "#contact",
+    background: require("./assets/images/hero-slider-bg.png"),
+    backgroundPosition: "right center",
+    backgroundSize: "auto 100%"
+  },
+  {
+    id: "hero-2",
+    eyebrow: "Full Stack JavaScript",
+    title: "Du frontend au backend",
+    description:
+      "React, TypeScript, Node.js, Express, Supabase et REST API pour construire des applications fiables, rapides et évolutives.",
+    primaryLabel: "Voir mes compétences",
+    primaryHref: "#skills",
+    secondaryLabel: "Demander un devis",
+    secondaryHref: "#contact",
+    background: require("./assets/images/hero-slider-bg.png"),
+    backgroundPosition: "68% center",
+    backgroundSize: "auto 108%"
+  },
+  {
+    id: "hero-3",
+    eyebrow: "E-commerce & projets web",
+    title: "Des expériences digitales qui convertissent",
+    description:
+      "Plus de 20 ans d'expérience dans le web et l'e-commerce, de l'intégration à la création de solutions modernes et sur mesure.",
+    primaryLabel: "Voir mes projets",
+    primaryHref: "#projects",
+    secondaryLabel: "Parlons de votre projet",
+    secondaryHref: "#contact",
+    background: require("./assets/images/hero-slider-bg.png"),
+    backgroundPosition: "82% center",
+    backgroundSize: "auto 112%"
+  }
+];
+
 // Social Media Links
 const socialMediaLinks = {
   github: "https://github.com/Andrianimehy",
@@ -214,7 +260,7 @@ const bigProjects = {
 
 // My projects / achievements
 const achievementSection = {
-  title: "Mes réalisations",
+  title: "Nos réalisations",
   subtitle:
     "Une sélection de sites e-commerce, applications web et projets institutionnels réalisés avec différentes technologies.",
 
@@ -339,6 +385,7 @@ const isHireable = true;
 export {
   illustration,
   greeting,
+  heroSlider,
   socialMediaLinks,
   splashScreen,
   skillsSection,

@@ -17,14 +17,20 @@ export default function Skills() {
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
+              {skillsSection.skills.map((skills, i) => {
+                return (
+                  <p
+                    key={i}
+                    className={
+                      isDark
+                        ? "dark-mode subTitle skills-text"
+                        : "subTitle skills-text"
+                    }
+                  >
+                    {skills}
+                  </p>
+                );
+              })}
           </div>
         </Fade>
         <Fade right duration={1000}>
@@ -51,21 +57,8 @@ export default function Skills() {
 
 <Fade>
            
-            <div>
-              {skillsSection.skills.map((skills, i) => {
-                return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
-                  >
-                    {skills}
-                  </p>
-                );
-              })}
+            <div className="skillos ">
+            
             </div>
         </Fade>
 
