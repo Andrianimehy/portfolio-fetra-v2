@@ -1,4 +1,4 @@
-/* Change this file to get your personal Portfolio */
+/* Personal Portfolio - Fetra Razafindrakoto */
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
@@ -18,9 +18,9 @@ const illustration = {
 // Summary And Greeting Section
 const greeting = {
   username: "Fetra Razafindrakoto",
-  title: "Bonjour, je suis Fetra",
+  title: "Développeur Full Stack JavaScript",
   subTitle: emoji(
-    "Intégrateur Web Senior et développeur Frontend depuis 2006. Je travaille sur des projets e-commerce et web avec Shopify, Magento, WordPress, JavaScript, React, Node.js et PHP."
+    "Je conçois et développe des applications web modernes, des sites e-commerce performants et des solutions digitales sur mesure. React, TypeScript, Node.js, Express, Supabase, REST API, Magento et Shopify."
   ),
   resumeLink: "",
   displayGreeting: true
@@ -40,76 +40,47 @@ const socialMediaLinks = {
 
 // Skills Section
 const skillsSection = {
-  title: "Ce que je fais",
-  subTitle:
-    "INTÉGRATION WEB, E-COMMERCE ET DÉVELOPPEMENT FRONTEND",
+  title: "Mes compétences",
+  subTitle: "FULL STACK JAVASCRIPT · E-COMMERCE · WEB DEVELOPMENT",
 
   skills: [
     emoji(
-      "⚡ Intégration de maquettes graphiques et développement d'interfaces web modernes et responsives"
+      "⚡ Développement d'applications web Full Stack avec React, TypeScript, Node.js et Express"
     ),
     emoji(
-      "⚡ Création et personnalisation de boutiques e-commerce avec Shopify, Magento et WooCommerce"
+      "⚡ Création d'interfaces modernes, responsives et performantes avec React, JavaScript, HTML5, CSS3 et Tailwind CSS"
     ),
     emoji(
-      "⚡ Développement frontend avec JavaScript, React et intégration d'API"
+      "⚡ Développement d'APIs REST, authentification, gestion des utilisateurs et intégration de services backend"
     ),
     emoji(
-      "⚡ Développement backend avec Node.js, Express et PHP"
+      "⚡ Développement avec Supabase et PostgreSQL, incluant authentification, données et Row Level Security (RLS)"
     ),
     emoji(
-      "⚡ Optimisation des performances, SEO technique et responsive design"
+      "⚡ Création, personnalisation et maintenance de solutions e-commerce avec Magento 1/2, Shopify, PrestaShop et WooCommerce"
     ),
     emoji(
-      "⚡ Migration, maintenance et amélioration de sites web existants"
+      "⚡ Intégration de thèmes et de maquettes, optimisation, maintenance et évolution de projets web existants"
     )
   ],
 
   softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "React",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "Node.js",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "PHP",
-      fontAwesomeClassname: "fab fa-php"
-    },
-    {
-      skillName: "WordPress",
-      fontAwesomeClassname: "fab fa-wordpress"
-    },
-    {
-      skillName: "Shopify",
-      fontAwesomeClassname: "fab fa-shopify"
-    },
-    {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "Database",
-      fontAwesomeClassname: "fas fa-database"
-    }
+    {skillName: "HTML5", fontAwesomeClassname: "fab fa-html5"},
+    {skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt"},
+    {skillName: "JavaScript", fontAwesomeClassname: "fab fa-js"},
+    {skillName: "TypeScript", fontAwesomeClassname: "fas fa-code"},
+    {skillName: "React", fontAwesomeClassname: "fab fa-react"},
+    {skillName: "Node.js", fontAwesomeClassname: "fab fa-node"},
+    {skillName: "Express", fontAwesomeClassname: "fas fa-server"},
+    {skillName: "Supabase / PostgreSQL", fontAwesomeClassname: "fas fa-database"},
+    {skillName: "REST API", fontAwesomeClassname: "fas fa-plug"},
+    {skillName: "PHP", fontAwesomeClassname: "fab fa-php"},
+    {skillName: "Laravel", fontAwesomeClassname: "fab fa-laravel"},
+    {skillName: "Shopify", fontAwesomeClassname: "fab fa-shopify"},
+    {skillName: "Magento", fontAwesomeClassname: "fas fa-shopping-cart"},
+    {skillName: "WordPress", fontAwesomeClassname: "fab fa-wordpress"},
+    {skillName: "Git / GitHub", fontAwesomeClassname: "fab fa-github"},
+    {skillName: "Vercel", fontAwesomeClassname: "fas fa-cloud"}
   ],
 
   display: true
@@ -121,17 +92,17 @@ const educationInfo = {
 
   schools: [
     {
-      schoolName: "Licence en Informatique de Gestion",
+      schoolName: "Licence – Informatique de Gestion",
       logo: require("./assets/images/harvardLogo.png"),
       subHeader: "Informatique de Gestion",
       duration: "2019",
       desc: "Formation supérieure en informatique de gestion."
     },
     {
-      schoolName: "DTS en Informatique",
+      schoolName: "DTS – Informatique",
       logo: require("./assets/images/stanfordLogo.png"),
       subHeader: "Diplôme de Technicien Supérieur",
-      duration: "2005",
+      duration: "2005 – 2007",
       desc: "Formation technique en informatique."
     }
   ]
@@ -143,16 +114,20 @@ const techStack = {
 
   experience: [
     {
-      Stack: "Frontend / Intégration",
+      Stack: "Frontend / React / TypeScript",
       progressPercentage: "90%"
     },
     {
-      Stack: "E-commerce / CMS",
+      Stack: "E-commerce / Magento / Shopify",
       progressPercentage: "90%"
     },
     {
-      Stack: "Backend / API",
-      progressPercentage: "70%"
+      Stack: "Backend / Node.js / Express / API",
+      progressPercentage: "75%"
+    },
+    {
+      Stack: "Supabase / PostgreSQL",
+      progressPercentage: "75%"
     }
   ],
 
@@ -165,20 +140,24 @@ const workExperiences = {
 
   experience: [
     {
-      role: "Chef de Pôle Intégration / Intégrateur Web Senior",
+      role: "Développeur Web Full Stack / Intégrateur Web Senior",
       company: "MADADEV WEB TOOLS",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "Depuis 2006",
 
       desc:
-        "Développement et intégration de sites web et e-commerce pour différents projets clients.",
+        "Plus de 20 ans d'expérience dans le développement web, l'intégration et l'e-commerce, avec une évolution progressive vers le développement Full Stack JavaScript.",
 
       descBullets: [
-        "Intégration de maquettes graphiques et développement responsive",
-        "Développement et personnalisation de boutiques Shopify, Magento et WordPress",
-        "Maintenance, migration et optimisation de sites web",
-        "Développement frontend avec JavaScript et React",
-        "Développement backend et API avec PHP, Node.js et Express",
+        "Conception et intégration de sites web modernes, responsives et orientés expérience utilisateur",
+        "Développement frontend avec JavaScript, React et TypeScript",
+        "Développement backend avec Node.js, Express et PHP",
+        "Création et intégration d'APIs REST et connexion à des services externes",
+        "Développement avec Supabase et PostgreSQL, authentification et Row Level Security (RLS)",
+        "Création, personnalisation et maintenance de boutiques Magento 1/2, Shopify, PrestaShop et WooCommerce",
+        "Développement et personnalisation de thèmes Shopify avec Liquid",
+        "Maintenance, migration, correction de bugs et optimisation de projets existants",
+        "Déploiement et mise en production avec Git, GitHub et Vercel",
         "Organisation et suivi du travail d'une équipe d'intégrateurs"
       ]
     }
@@ -191,117 +170,115 @@ const openSource = {
   display: false
 };
 
-// Projects Section
+// Domains of expertise
 const bigProjects = {
-  title: "Mes projets",
+  title: "Domaines d'expertise",
   subtitle:
-    "Quelques domaines et projets sur lesquels j'interviens.",
+    "Des compétences complémentaires pour concevoir, développer et déployer des projets web complets.",
 
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Shopify",
+      image: require("./assets/images/expertise-fullstack.png"),
+      projectName: "Développement Full Stack",
       projectDesc:
-        "Création et personnalisation de boutiques Shopify, développement Liquid, thèmes, produits, métadonnées et intégration e-commerce.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/Andrianimehy"
-        }
-      ]
+        "Applications modernes avec React, TypeScript, Node.js, Express et REST API."
     },
-
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Magento",
+      image: require("./assets/images/expertise-ecommerce.png"),
+      projectName: "E-commerce",
       projectDesc:
-        "Intégration et maintenance de projets Magento, personnalisation de thèmes, modules, configuration et optimisation.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/Andrianimehy"
-        }
-      ]
+        "Shopify, Magento 1/2, PrestaShop et WooCommerce : création, personnalisation et maintenance."
     },
-
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "WordPress / WooCommerce",
+      image: require("./assets/images/expertise-api.png"),
+      projectName: "Backend & API",
       projectDesc:
-        "Création de sites vitrines et boutiques WooCommerce avec personnalisation de thèmes, contenus et fonctionnalités.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/Andrianimehy"
-        }
-      ]
+        "Services backend, APIs REST, authentification et intégration de services externes."
     },
-
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "React + Node.js",
+      image: require("./assets/images/expertise-database.png"),
+      projectName: "Supabase & PostgreSQL",
       projectDesc:
-        "Développement d'applications web avec React, Vite, Node.js, Express, MySQL, API REST et authentification JWT.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/Andrianimehy"
-        }
-      ]
+        "Bases de données, authentification, stockage et sécurité avec Supabase et PostgreSQL."
     },
-
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Performance Web & SEO",
+      image: require("./assets/images/expertise-frontend.png"),
+      projectName: "Frontend moderne",
       projectDesc:
-        "Optimisation des performances, responsive design, chargement des ressources, SEO technique et amélioration des Core Web Vitals.",
-      footerLink: [
-        {
-          name: "GitHub",
-          url: "https://github.com/Andrianimehy"
-        }
-      ]
+        "Interfaces responsives et performantes avec React, JavaScript, HTML5, CSS3 et Tailwind CSS."
     }
   ],
 
   display: true
 };
 
-// Achievement Section
-// IMPORTANT : AchievementCard.js utilise cardInfo.footer.map()
-// donc chaque carte doit obligatoirement avoir footer: []
+// My projects / achievements
 const achievementSection = {
-  title: emoji("Compétences & réalisations 💻"),
-
+  title: "Mes réalisations",
   subtitle:
-    "Quelques domaines dans lesquels j'interviens en tant qu'intégrateur web senior.",
+    "Une sélection de sites e-commerce, applications web et projets institutionnels réalisés avec différentes technologies.",
 
   achievementsCards: [
     {
-      title: "Intégration Web",
+      title: "Feelingz Beauty",
       description:
-        "Intégration de maquettes graphiques, responsive design, animations et interfaces modernes.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Intégration Web",
-      footer: []
+        "Boutique e-commerce développée avec Shopify, orientée beauté et expérience d'achat.",
+      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://feelingz-beauty.myshopify.com/",
+      fallbackImage: require("./assets/images/project-feelingz.png"),
+      imageAlt: "Feelingz Beauty — Shopify",
+      tech: "Shopify",
+      footer: [
+        {name: "Voir le site", url: "https://feelingz-beauty.myshopify.com/"}
+      ]
     },
-
     {
-      title: "E-commerce",
+      title: "Le Grand Barbershop",
       description:
-        "Création, personnalisation et maintenance de boutiques Shopify, Magento et WooCommerce.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "E-commerce",
-      footer: []
+        "Application web moderne développée avec React et Node.js, avec catalogue, gestion des produits et déploiement Vercel.",
+      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://legrand-barbershop.vercel.app/",
+      fallbackImage: require("./assets/images/project-legrand.png"),
+      imageAlt: "Le Grand Barbershop — React / Node.js",
+      tech: "React · Node.js",
+      footer: [
+        {name: "Voir le site", url: "https://legrand-barbershop.vercel.app/"},
+        {name: "GitHub", url: "https://github.com/Andrianimehy/legrand-barbershop"}
+      ]
     },
-
     {
-      title: "Frontend Development",
+      title: "Urban Shop",
       description:
-        "Développement d'interfaces avec JavaScript, React et les technologies frontend modernes.",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "Frontend Development",
-      footer: []
+        "Boutique e-commerce développée avec WordPress et WooCommerce, avec présentation des produits et parcours d'achat.",
+      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://urban-shop.infy.click/",
+      fallbackImage: require("./assets/images/project-urban-shop.png"),
+      imageAlt: "Urban Shop — WooCommerce",
+      tech: "WordPress · WooCommerce",
+      footer: [
+        {name: "Voir le site", url: "https://urban-shop.infy.click/"}
+      ]
+    },
+    {
+      title: "Maison Délice",
+      description:
+        "Application e-commerce développée avec React, TypeScript et Supabase : catalogue, panier, commandes et administration.",
+      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://maison-delice-one.vercel.app/",
+      fallbackImage: require("./assets/images/project-maison-delice.png"),
+      imageAlt: "Maison Délice — React / Node.js / Supabase",
+      tech: "React · TypeScript · Supabase",
+      footer: [
+        {name: "Voir le site", url: "https://maison-delice-one.vercel.app/"}
+      ]
+    },
+    {
+      title: "Fanamby",
+      description:
+        "Site institutionnel pour une organisation engagée dans la conservation de la biodiversité et le développement durable à Madagascar.",
+      image: "https://image.thum.io/get/width/1200/crop/700/noanimate/https://fanamby.org/",
+      fallbackImage: require("./assets/images/project-fanamby.png"),
+      imageAlt: "Fanamby — WordPress",
+      tech: "WordPress",
+      footer: [
+        {name: "Voir le site", url: "https://fanamby.org/"}
+      ]
     }
   ],
 
@@ -310,59 +287,47 @@ const achievementSection = {
 
 // Blogs Section
 const blogSection = {
-  title: "Blogs",
+  title: "Blog",
 
   subtitle:
-    "Articles et contenus techniques autour du développement web.",
+    "Articles et contenus autour du développement web, du Full Stack JavaScript et de l'e-commerce.",
 
   displayMediumBlogs: "false",
-
   blogs: [],
-
   display: false
 };
 
 // Talks Section
 const talkSection = {
   title: "TALKS",
-
   subtitle: emoji(
-    "Partage d'expérience et de connaissances autour du développement web."
+    "Partage d'expérience et de connaissances autour du développement web et de l'e-commerce."
   ),
-
   talks: [],
-
   display: false
 };
 
 // Podcast Section
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-
   subtitle: "Contenus autour du développement web et de la technologie.",
-
   podcast: [],
-
   display: false
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Mon CV",
-
+  title: "Mon parcours",
   subtitle:
-    "Consultez mon parcours professionnel et mes compétences.",
-
+    "Plus de 20 ans d'expérience dans le développement web, l'intégration et l'e-commerce.",
   display: true
 };
 
 // Contact
 const contactInfo = {
-  title: emoji("Contactez-moi ☎️"),
-
+  title: emoji("Travaillons ensemble 🤝"),
   subtitle:
-    "Vous avez un projet web, e-commerce ou une mission d'intégration ? Contactez-moi.",
-
+    "Vous avez un projet web, une application Full Stack, une boutique e-commerce ou besoin de faire évoluer un projet existant ? Parlons-en.",
   number: "",
   email_address: ""
 };

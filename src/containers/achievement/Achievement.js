@@ -1,14 +1,55 @@
-import React, {useContext} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import "./Achievement.scss";
 import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
+  const [visibleCount, setVisibleCount] = useState(3);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const updateVisibleCount = () => {
+      if (window.innerWidth <= 520) {
+        setVisibleCount(1);
+      } else if (window.innerWidth <= 900) {
+        setVisibleCount(2);
+      } else {
+        setVisibleCount(3);
+      }
+    };
+
+    updateVisibleCount();
+    window.addEventListener("resize", updateVisibleCount);
+    return () => window.removeEventListener("resize", updateVisibleCount);
+  }, []);
+
+  useEffect(() => {
+    const maxIndex = Math.max(0, achievementSection.achievementsCards.length - visibleCount);
+    if (currentIndex > maxIndex) {
+      setCurrentIndex(maxIndex);
+    }
+  }, [visibleCount, currentIndex]);
+
   if (!achievementSection.display) {
     return null;
   }
+
+  const cards = achievementSection.achievementsCards;
+  const maxIndex = Math.max(0, cards.length - visibleCount);
+  const canGoPrevious = currentIndex > 0;
+  const canGoNext = currentIndex < maxIndex;
+
+  const goPrevious = () => {
+    setCurrentIndex(index => Math.max(0, index - 1));
+  };
+
+  const goNext = () => {
+    setCurrentIndex(index => Math.min(maxIndex, index + 1));
+  };
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">
@@ -33,19 +74,65 @@ export default function Achievement() {
               {achievementSection.subtitle}
             </p>
           </div>
-          <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card, i) => {
-              return (
+
+          <div className="achievement-carousel">
+            <button
+              type="button"
+              className={
+                isDark
+                  ? "dark-mode achievement-carousel-button"
+                  : "achievement-carousel-button"
+              }
+              onClick={goPrevious}
+              disabled={!canGoPrevious}
+              aria-label="Projet précédent"
+            >
+              ‹
+            </button>
+
+            <div className="achievement-cards-div">
+              {cards.slice(currentIndex, currentIndex + visibleCount).map((card, i) => (
                 <AchievementCard
-                  key={i}
+                  key={`${currentIndex}-${i}-${card.title}`}
                   isDark={isDark}
                   cardInfo={{
                     title: card.title,
-                    description: card.subtitle,
+                    description: card.description,
                     image: card.image,
+                    fallbackImage: card.fallbackImage,
                     imageAlt: card.imageAlt,
-                    footer: card.footerLink
+                    tech: card.tech,
+                    footer: card.footer
                   }}
+                />
+              ))}
+            </div>
+
+            <button
+              type="button"
+              className={
+                isDark
+                  ? "dark-mode achievement-carousel-button"
+                  : "achievement-carousel-button"
+              }
+              onClick={goNext}
+              disabled={!canGoNext}
+              aria-label="Projet suivant"
+            >
+              ›
+            </button>
+          </div>
+
+          <div className="achievement-carousel-dots" aria-label="Navigation des réalisations">
+            {cards.map((card, index) => {
+              const isActive = index >= currentIndex && index < currentIndex + visibleCount;
+              return (
+                <button
+                  type="button"
+                  key={card.title}
+                  className={isActive ? "achievement-carousel-dot active" : "achievement-carousel-dot"}
+                  onClick={() => setCurrentIndex(Math.min(index, maxIndex))}
+                  aria-label={`Afficher ${card.title}`}
                 />
               );
             })}

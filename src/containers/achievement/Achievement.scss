@@ -32,3 +32,94 @@
     text-align: center;
   }
 }
+
+
+.achievement-carousel {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.achievement-cards-div {
+  flex: 1;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.achievement-carousel-button {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid $lightBorder1;
+  border-radius: 50%;
+  background: $lightBackground2;
+  color: $titleColor;
+  font-size: 2rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.achievement-carousel-button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+.achievement-carousel-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.achievement-carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.achievement-carousel-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: $subTitle;
+  opacity: 0.35;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.achievement-carousel-dot.active {
+  width: 24px;
+  border-radius: 999px;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .achievement-cards-div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .achievement-carousel {
+    gap: 8px;
+  }
+
+  .achievement-cards-div {
+    grid-template-columns: 1fr;
+  }
+
+  .achievement-carousel-button {
+    flex-basis: 36px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.6rem;
+  }
+}

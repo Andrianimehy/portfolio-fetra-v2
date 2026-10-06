@@ -1,6 +1,6 @@
 {
-  "short_name": "DeveloperFolio",
-  "name": "DeveloperFolio",
+  "short_name": "Fetra Razafindrakoto",
+  "name": "Fetra Razafindrakoto | Développeur Full Stack JavaScript",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#6c63ff",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Portfolio de Fetra Razafindrakoto, développeur Full Stack JavaScript spécialisé en React, TypeScript, Node.js, Supabase et e-commerce."
 }

@@ -32,6 +32,11 @@ export default function AchievementCard({ cardInfo, isDark }) {
           src={cardInfo.image}
           alt={cardInfo.imageAlt || "Card Thumbnail"}
           className="card-image"
+          onError={event => {
+            if (cardInfo.fallbackImage && event.currentTarget.src !== cardInfo.fallbackImage) {
+              event.currentTarget.src = cardInfo.fallbackImage;
+            }
+          }}
         />
       </div>
 
@@ -55,6 +60,7 @@ export default function AchievementCard({ cardInfo, isDark }) {
         >
           {cardInfo.description || cardInfo.subtitle}
         </p>
+        {cardInfo.tech && <span className="project-tech-tag">{cardInfo.tech}</span>}
       </div>
 
       <div className="certificate-card-footer">
