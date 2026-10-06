@@ -10,36 +10,42 @@ export default function About() {
     <Fade bottom duration={1000} distance="20px">
       <section className="main about-section" id="about">
         <div className="about-header">
+          <span className="about-eyebrow">ATHELSTAN AGENCY</span>
           <h1 className="heading about-title">Qui sommes-nous ?</h1>
           <p className={isDark ? "dark-mode subTitle about-subtitle" : "subTitle about-subtitle"}>
-            Une expertise web au service de vos projets digitaux.
+            Une expertise web au service de vos objectifs.
           </p>
         </div>
-        <div className="about-content">
-          <div className="about-card">
+
+        <div className="about-intro">
+          <div>
             <h2>Une agence web orientée résultats</h2>
             <p>
-              Athelstan Agency accompagne les entreprises, indépendants et organisations
-              dans la création, la modernisation et l'évolution de leurs projets web.
-              Nous concevons des solutions modernes, performantes et adaptées aux besoins
-              réels de chaque projet.
-            </p>
-            <p>
-              Notre expérience couvre aussi bien le développement d'applications web
-              Full Stack que la création de sites e-commerce et l'intégration de projets
-              existants.
+              Athelstan Agency accompagne les entreprises, indépendants et organisations dans la création, la refonte et l'évolution de leurs projets digitaux. Nous combinons expérience métier, design et développement pour construire des solutions utiles, rapides et durables.
             </p>
           </div>
-          <div className="about-card">
-            <h2>Notre savoir-faire</h2>
-            <ul>
-              <li>Développement web Full Stack avec React, TypeScript et Node.js</li>
-              <li>Création de sites e-commerce avec Shopify, Magento et WooCommerce</li>
-              <li>APIs REST, bases de données et solutions Supabase / PostgreSQL</li>
-              <li>Interfaces modernes, responsives et optimisées</li>
-              <li>Maintenance, optimisation et évolution de sites existants</li>
-            </ul>
+          <div className="about-experience">
+            <strong>20+</strong>
+            <span>ans d'expérience dans le web</span>
           </div>
+        </div>
+
+        <div className="about-process">
+          <article className="about-process-card">
+            <span>01</span>
+            <h3>Comprendre</h3>
+            <p>Nous clarifions vos objectifs, vos utilisateurs et les priorités du projet.</p>
+          </article>
+          <article className="about-process-card">
+            <span>02</span>
+            <h3>Créer</h3>
+            <p>Nous concevons une expérience moderne, responsive et adaptée à votre identité.</p>
+          </article>
+          <article className="about-process-card">
+            <span>03</span>
+            <h3>Faire évoluer</h3>
+            <p>Nous optimisons, maintenons et faisons grandir votre solution dans le temps.</p>
+          </article>
         </div>
       </section>
     </Fade>

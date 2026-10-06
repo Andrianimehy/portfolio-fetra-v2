@@ -17,10 +17,10 @@ const illustration = {
 
 // Summary And Greeting Section
 const greeting = {
-  username: "Fetra Razafindrakoto",
-  title: "Développeur Full Stack JavaScript",
+  username: "Athelstan Agency",
+  title: "Création Web & Solutions Digitales",
   subTitle: emoji(
-    "Je conçois et développe des applications web modernes, des sites e-commerce performants et des solutions digitales sur mesure. React, TypeScript, Node.js, Express, Supabase, REST API, Magento et Shopify."
+    "Nous concevons des sites web, boutiques e-commerce et applications digitales sur mesure pour accompagner les entreprises dans leur croissance."
   ),
   resumeLink: "",
   displayGreeting: true
@@ -30,10 +30,10 @@ const greeting = {
 const heroSlider = [
   {
     id: "hero-1",
-    eyebrow: "Développement web",
-    title: "Des solutions web sur mesure",
+    eyebrow: "Création web & solutions digitales",
+    title: "Créons une présence digitale qui vous ressemble",
     description:
-      "On conçois et développe des applications web modernes, des sites e-commerce performants et des solutions digitales adaptées à vos besoins.",
+      "Nous concevons des sites web modernes, rapides et sur mesure pour transformer vos idées en expériences digitales professionnelles.",
     primaryLabel: "Découvrir nos réalisations",
     primaryHref: "#projects",
     secondaryLabel: "Nous contacter",
@@ -44,10 +44,10 @@ const heroSlider = [
   },
   {
     id: "hero-2",
-    eyebrow: "Full Stack JavaScript",
-    title: "Du frontend au backend",
+    eyebrow: "Applications web",
+    title: "Des applications pensées pour évoluer",
     description:
-      "React, TypeScript, Node.js, Express, Supabase et REST API pour construire des applications fiables, rapides et évolutives.",
+      "De l'interface au backend, nous développons des solutions fiables, performantes et évolutives avec les technologies web modernes.",
     primaryLabel: "Voir nos compétences",
     primaryHref: "#skills",
     secondaryLabel: "Demander un devis",
@@ -58,10 +58,10 @@ const heroSlider = [
   },
   {
     id: "hero-3",
-    eyebrow: "E-commerce & projets web",
-    title: "Des expériences digitales qui convertissent",
+    eyebrow: "E-commerce & expérience digitale",
+    title: "Transformons vos visiteurs en clients",
     description:
-      "Plus de 20 ans d'expérience dans le web et l'e-commerce, de l'intégration à la création de solutions modernes et sur mesure.",
+      "E-commerce, refonte et optimisation : notre expérience du web nous permet de créer des parcours simples, efficaces et orientés conversion.",
     primaryLabel: "Voir nos projets",
     primaryHref: "#projects",
     secondaryLabel: "Parlons de votre projet",
@@ -86,27 +86,27 @@ const socialMediaLinks = {
 
 // Skills Section
 const skillsSection = {
-  title: "Mes compétences",
-  subTitle: "FULL STACK JAVASCRIPT · E-COMMERCE · WEB DEVELOPMENT",
+  title: "Nos expertises",
+  subTitle: "WEB · E-COMMERCE · FULL STACK · SOLUTIONS DIGITALES",
 
   skills: [
     emoji(
-      "⚡ Développement d'applications web Full Stack avec React, TypeScript, Node.js et Express"
+      "⚡ Applications web modernes avec React, TypeScript, Node.js et Express"
     ),
     emoji(
-      "⚡ Création d'interfaces modernes, responsives et performantes avec React, JavaScript, HTML5, CSS3 et Tailwind CSS"
+      "⚡ Interfaces modernes, responsives et performantes pensées pour vos utilisateurs"
     ),
     emoji(
-      "⚡ Développement d'APIs REST, authentification, gestion des utilisateurs et intégration de services backend"
+      "⚡ APIs REST, authentification, intégrations et services backend adaptés à votre projet"
     ),
     emoji(
-      "⚡ Développement avec Supabase et PostgreSQL, incluant authentification, données et Row Level Security (RLS)"
+      "⚡ Bases de données et backend avec Supabase, PostgreSQL et sécurité RLS"
     ),
     emoji(
-      "⚡ Création, personnalisation et maintenance de solutions e-commerce avec Magento 1/2, Shopify, PrestaShop et WooCommerce"
+      "⚡ Création et évolution de boutiques Shopify, Magento, PrestaShop et WooCommerce"
     ),
     emoji(
-      "⚡ Intégration de thèmes et de maquettes, optimisation, maintenance et évolution de projets web existants"
+      "⚡ Refonte, intégration, optimisation et maintenance de projets web existants"
     )
   ],
 
@@ -262,13 +262,13 @@ const bigProjects = {
 const achievementSection = {
   title: "Nos réalisations",
   subtitle:
-    "Une sélection de sites e-commerce, applications web et projets institutionnels réalisés avec différentes technologies.",
+    "Des projets concrets conçus pour répondre à des objectifs business, améliorer l'expérience utilisateur et faire évoluer votre activité.",
 
   achievementsCards: [
     {
       title: "Feelingz Beauty",
       description:
-        "Boutique e-commerce développée avec Shopify, orientée beauté et expérience d'achat.",
+        "Boutique e-commerce Shopify conçue pour présenter les produits, simplifier le parcours d'achat et renforcer l'image de marque.",
       image: require("./assets/images/project-feelingz.png"),
       imageAlt: "Feelingz Beauty — Shopify",
       tech: "Shopify",
@@ -279,30 +279,27 @@ const achievementSection = {
     {
       title: "Le Grand Barbershop",
       description:
-        "Application web moderne développée avec React et Node.js, avec catalogue, gestion des produits.",
+        "Application web moderne avec catalogue et gestion des produits, développée pour offrir une expérience rapide et claire.",
        image: require("./assets/images/project-barbershop.png"),
       imageAlt: "Le Grand Barbershop — React / Node.js",
       tech: "React · Node.js",
       footer: [
-        {name: "Voir le site", url: "https://legrand-barbershop.vercel.app/"},
-        {name: "GitHub", url: "https://github.com/Andrianimehy/legrand-barbershop"}
+        {name: "Voir le site", url: "https://legrand-barbershop.vercel.app/"}
       ]
     },
     {
       title: "FAAME",
       description:
-        "Site corporate WordPress avec gestion des membres, formulaire de contact et collecte de dons en ligne.",
+        "Site corporate WordPress avec présentation de l'organisation, espace membres, formulaire de contact et collecte de dons en ligne.",
        image: require("./assets/images/project-faame.png"),
       imageAlt: "FAAME — WooCommerce",
-      tech: "WordPress · WooCommerce",
-      footer: [
-        {name: "Voir le site", url: "https://urban-shop.infy.click/"}
-      ]
+      tech: "WordPress",
+      footer: []
     },
     {
       title: "Maison Délice",
       description:
-        "Application e-commerce React, TypeScript et Supabase : catalogue, panier, commandes et administration.",
+        "Plateforme e-commerce complète avec catalogue, panier, commandes et administration, développée avec React, TypeScript et Supabase.",
        image: require("./assets/images/project-delice.png"),
       imageAlt: "Maison Délice — React / Node.js / Supabase",
       tech: "React · TypeScript · Supabase",
@@ -313,7 +310,7 @@ const achievementSection = {
     {
       title: "Fanamby",
       description:
-        "Site institutionnel WordPress dédié à la biodiversité et au développement durable à Madagascar.",
+        "Site institutionnel WordPress dédié à la biodiversité et au développement durable à Madagascar, avec une présentation claire des actions et projets.",
        image: require("./assets/images/project-fanamby.png"),
       imageAlt: "Fanamby — WordPress",
       tech: "WordPress",
@@ -358,17 +355,17 @@ const podcastSection = {
 
 // Resume Section
 const resumeSection = {
-  title: "Mon parcours",
+  title: "Notre expérience",
   subtitle:
-    "Plus de 20 ans d'expérience dans le développement web, l'intégration et l'e-commerce.",
+    "Plus de 20 ans d'expérience dans le web, l'intégration et l'e-commerce au service de projets concrets.",
   display: true
 };
 
 // Contact
 const contactInfo = {
-  title: emoji("Travaillons ensemble 🤝"),
+  title: emoji("Parlons de votre projet 🤝"),
   subtitle:
-    "Vous avez un projet web, une application Full Stack, une boutique e-commerce ou besoin de faire évoluer un projet existant ? Parlons-en.",
+    "Vous avez un projet web, une boutique e-commerce, une application ou un site à faire évoluer ? Décrivez-nous votre besoin et construisons la bonne solution ensemble.",
   number: "+261 34 14 587 73",
   email_address: "fetranirina@gmail.com"
 };

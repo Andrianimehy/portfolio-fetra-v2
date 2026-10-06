@@ -24,7 +24,7 @@ export default function Contact() {
     setSent(false);
   };
 
-  const buildMessage = () => `Bonjour Fetra,\n\nJe souhaite vous contacter au sujet d'un projet.\n\nNom : ${form.name}\nEmail : ${form.email}\nEntreprise : ${form.company || "Non précisée"}\nType de projet : ${form.project}\nBudget : ${form.budget || "Non précisé"}\n\nMessage :\n${form.message}`;
+  const buildMessage = () => `Bonjour Athelstan Agency,\n\nJe souhaite vous contacter au sujet d'un projet.\n\nNom : ${form.name}\nEmail : ${form.email}\nEntreprise : ${form.company || "Non précisée"}\nType de projet : ${form.project}\nBudget : ${form.budget || "Non précisé"}\n\nMessage :\n${form.message}`;
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -68,15 +68,15 @@ export default function Contact() {
             </div>
 
             <div className="contact-social">
-              <span>Retrouvez-moi également</span>
+              <span>Retrouvez-nous également</span>
               <SocialMedia />
             </div>
           </div>
 
           <div className={isDark ? "contact-form-card dark-mode" : "contact-form-card"}>
             <div className="contact-form-heading">
-              <h2>Parlez-moi de votre projet</h2>
-              <p>Quelques informations suffisent pour commencer la discussion.</p>
+              <h2>Décrivez-nous votre projet</h2>
+              <p>Quelques informations suffisent pour commencer la discussion. Nous vous répondrons rapidement.</p>
             </div>
 
             <form onSubmit={handleSubmit}>
