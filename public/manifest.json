@@ -1,6 +1,6 @@
 {
-  "short_name": "Fetra Razafindrakoto",
-  "name": "Fetra Razafindrakoto | Développeur Full Stack JavaScript",
+  "short_name": "Athelstan Agency",
+  "name": "Athelstan Agency | Création Web & Solutions Digitales",
   "icons": [
     {
       "src": "/favicon.ico",
@@ -22,5 +22,5 @@
   "display": "standalone",
   "theme_color": "#6c63ff",
   "background_color": "#ffffff",
-  "description": "Portfolio de Fetra Razafindrakoto, développeur Full Stack JavaScript spécialisé en React, TypeScript, Node.js, Supabase et e-commerce."
+  "description": "Athelstan Agency, développeur Full Stack JavaScript spécialisé en React, TypeScript, Node.js, Supabase et e-commerce."
 }

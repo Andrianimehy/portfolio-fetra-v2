@@ -1,4 +1,4 @@
-/* Personal Portfolio - Fetra Razafindrakoto */
+/* Athelstan Agency | Création Web & Solutions Digitales */
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
