@@ -291,7 +291,7 @@ const achievementSection = {
     {
       title: "FAAME",
       description:
-        "Boutique e-commerce développée avec WordPress et WooCommerce, avec présentation des produits et parcours d'achat.",
+        "Site corporate WordPress avec gestion des membres, formulaire de contact et collecte de dons en ligne.",
        image: require("./assets/images/project-faame.png"),
       imageAlt: "FAAME — WooCommerce",
       tech: "WordPress · WooCommerce",
@@ -302,7 +302,7 @@ const achievementSection = {
     {
       title: "Maison Délice",
       description:
-        "Application e-commerce développée avec React, TypeScript et Supabase : catalogue, panier, commandes et administration.",
+        "Application e-commerce React, TypeScript et Supabase : catalogue, panier, commandes et administration.",
        image: require("./assets/images/project-delice.png"),
       imageAlt: "Maison Délice — React / Node.js / Supabase",
       tech: "React · TypeScript · Supabase",
@@ -313,7 +313,7 @@ const achievementSection = {
     {
       title: "Fanamby",
       description:
-        "Site institutionnel pour une organisation engagée dans la conservation de la biodiversité et le développement durable à Madagascar.",
+        "Site institutionnel WordPress dédié à la biodiversité et au développement durable à Madagascar.",
        image: require("./assets/images/project-fanamby.png"),
       imageAlt: "Fanamby — WordPress",
       tech: "WordPress",
