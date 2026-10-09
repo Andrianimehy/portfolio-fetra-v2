@@ -6,7 +6,7 @@
 .certificate-card { background-color:$lightBackground2; box-shadow:$lightBoxShadowDark 0 10px 30px -15px; padding:1rem; border-radius:12px; border:1px solid $lightBorder1; transition:all .3s ease; height:100%; box-sizing:border-box; }
 .certificate-card:hover { box-shadow:$lightBoxShadowDark 0 20px 30px -10px; transform:translateY(-4px); }
 .dark-mode.certificate-card:hover { box-shadow:$achievementCertificateCardHoverDark 0 20px 30px -10px; }
-.certificate-image-div { position:relative; height:233px; overflow:hidden; display:flex; justify-content:center; align-items:center; border-radius:8px; }
+.certificate-image-div { position:relative; height:367px; overflow:hidden; display:flex; justify-content:center; align-items:center; border-radius:8px; }
 .achievement-cards-div { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:1rem; }
 .certificate-detail-div { text-align:center; min-height:118px; display:flex; flex-direction:column; align-items:center; }
 .certificate-card-footer { display:flex; align-items:center; flex-wrap:wrap; justify-content:center; margin-top:auto; padding-top:8px; }

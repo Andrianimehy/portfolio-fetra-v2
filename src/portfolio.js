@@ -277,17 +277,6 @@ const achievementSection = {
       ]
     },
     {
-      title: "Feelingz Beauty",
-      description:
-        "Boutique Shopify conçue pour valoriser les produits, simplifier l'achat et renforcer l'image de marque.",
-      image: require("./assets/images/project-feelingz.png"),
-      imageAlt: "Feelingz Beauty — Shopify",
-      tech: "Shopify",
-      footer: [
-        {name: "Voir le site", url: "https://feelingz-beauty.myshopify.com/"}
-      ]
-    },
-    {
       title: "Le Grand Barbershop",
       description:
         "Application web moderne avec catalogue et gestion des produits, pensée pour une expérience rapide et claire.",
@@ -298,6 +287,18 @@ const achievementSection = {
         {name: "Voir le site", url: "https://legrand-barbershop.vercel.app/"}
       ]
     },
+    {
+      title: "Feelingz Beauty",
+      description:
+        "Boutique Shopify conçue pour valoriser les produits, simplifier l'achat et renforcer l'image de marque.",
+      image: require("./assets/images/project-feelingz.png"),
+      imageAlt: "Feelingz Beauty — Shopify",
+      tech: "Shopify",
+      footer: [
+        {name: "Voir le site", url: "https://feelingz-beauty.myshopify.com/"}
+      ]
+    },
+    
     {
       title: "FAAME",
       description:
@@ -319,14 +320,14 @@ const achievementSection = {
       ]
     },
     {
-      title: "Fanamby",
+      title: "Hartmann Tresore",
       description:
-        "Site institutionnel WordPress dédié à la biodiversité et au développement durable à Madagascar.",
-       image: require("./assets/images/project-fanamby.png"),
-      imageAlt: "Fanamby — WordPress",
-      tech: "WordPress",
+        "Site e-commerce spécialisé dans les coffres-forts et solutions de sécurité pour particuliers et professionnels.",
+       image: require("./assets/images/project-hartmann.png"),
+      imageAlt: "Hartmann — Magento",
+      tech: "Magento",
       footer: [
-        {name: "Voir le site", url: "https://fanamby.org/"}
+        {name: "Voir le site", url: "https://www.hartmann-tresore.fr/"}
       ]
     }
   ],

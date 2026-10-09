@@ -7,7 +7,7 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
-  const [visibleCount, setVisibleCount] = useState(3);
+  const [visibleCount, setVisibleCount] = useState(2);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -15,9 +15,9 @@ export default function Achievement() {
       if (window.innerWidth <= 520) {
         setVisibleCount(1);
       } else if (window.innerWidth <= 900) {
-        setVisibleCount(2);
+        setVisibleCount(1);
       } else {
-        setVisibleCount(3);
+        setVisibleCount(2);
       }
     };
 
