@@ -20,10 +20,13 @@
 .project-card-dark { box-shadow: 0 8px 22px -14px $darkBoxShadow; transition: transform .25s ease, box-shadow .25s ease; }
 .project-card-light:hover, .project-card-dark:hover { transform: translateY(-4px); }
 
-.project-image { position: relative; height: 175px; overflow: hidden; display: flex; border-radius: 8px; }
+.project-image { position: relative; height: 315px; overflow: hidden; display: flex; border-radius: 8px; }
 .project-image .card-image { width: 100%; height: 100%; object-fit: cover; }
 .project-detail { text-align: center; padding: 0 4px 6px; }
 
+.achievement-main-div {
+    margin-top: 70px;
+}
 .expertise-carousel { display: flex; align-items: center; gap: .7rem; width: 100%; }
 .expertise-carousel-viewport { flex: 1; min-width: 0; overflow: hidden; padding: 4px 2px 18px; margin: -4px -2px -18px; }
 .expertise-cards-track { display: flex; width: 100%; transform: translateX(calc(-1 * var(--current-index) * 100%)); transition: transform .65s cubic-bezier(.22,1,.36,1); will-change: transform; }
