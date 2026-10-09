@@ -38,7 +38,7 @@ const heroSlider = [
     primaryHref: "#projects",
     secondaryLabel: "Nous contacter",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-web.jpg"),
+    background: require("./assets/images/hero-web.png"),
     backgroundPosition: "center center",
     backgroundSize: "cover"
   },
