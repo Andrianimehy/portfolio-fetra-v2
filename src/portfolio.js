@@ -266,6 +266,17 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "KOTI Collection",
+      description:
+        "Boutique e-commerce Magento conçue pour valoriser les produits, optimiser l’expérience d’achat et offrir une navigation fluide sur tous les écrans.",
+      image: require("./assets/images/project-koti.png"),
+      imageAlt: "KOTI Collection",
+      tech: "Magento",
+      footer: [
+        {name: "Voir le site", url: "https://m10642.app-on-demand.net/"}
+      ]
+    },
+    {
       title: "Feelingz Beauty",
       description:
         "Boutique Shopify conçue pour valoriser les produits, simplifier l'achat et renforcer l'image de marque.",
