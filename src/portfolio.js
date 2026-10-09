@@ -306,7 +306,7 @@ const achievementSection = {
        image: require("./assets/images/project-faame.png"),
       imageAlt: "FAAME — WooCommerce",
       tech: "WordPress",
-      footer: []
+      footer: [{name: "Voir le site", url: "https://urban-shop.infy.click/?i=1"}]
     },
     {
       title: "Maison Délice",
