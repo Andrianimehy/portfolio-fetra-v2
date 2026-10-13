@@ -1,23 +1,72 @@
+/* Splash screen: stable centering on first load, including narrow mobile screens. */
 .splash-container {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   min-height: 100vh;
+  min-height: 100svh;
+  padding: 24px 18px;
+  gap: clamp(24px, 7vh, 56px);
+  overflow: hidden;
 }
 
 .splash-animation-container {
-  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  width: min(72vw, 280px);
+  aspect-ratio: 1 / 1;
+  height: auto;
+  min-height: 0;
+}
+
+.splash-animation-container > div,
+.splash-animation-container svg,
+.splash-animation-container canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .splash-title-container {
-  font-size: 2.5rem;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: clamp(1.25rem, 6.5vw, 2.5rem);
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
 }
+
 .splash-title {
   font-family: "Agustina Regular", cursive;
   font-weight: bold;
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
-  padding: 0 20px;
+  padding: 0 clamp(5px, 2vw, 14px);
+}
+
+/* Remonter l'animation et le logo sur mobile */
+@media (max-width: 600px) {
+  .splash-animation-container,
+  .splash-title-container {
+    transform: translateY(-20vh);
+  }
+}
+
+@media (max-width: 380px) {
+  .splash-container { padding-right: 12px; padding-left: 12px; }
+  .splash-animation-container { width: min(68vw, 230px); }
+  .splash-title-container { font-size: clamp(1.05rem, 6vw, 1.35rem); }
+  .splash-title { padding: 0 4px; }
 }

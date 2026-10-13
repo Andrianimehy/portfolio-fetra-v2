@@ -14,4 +14,4 @@
 span.certificate-tag:hover { background:$buttonHover; }
 .project-tech-tag { display:inline-block; margin:7px 0 0; padding:4px 9px; border-radius:999px; font-size:.7rem; font-weight:600; background:rgba(99,102,241,.12); color:inherit; }
 @media (max-width:1100px) { .certificate-image-div { height:185px; } }
-@media (max-width:520px) { .certificate-image-div { height:190px; } .certificate-detail-div { min-height:105px; } }
+@media (max-width:520px) { .certificate-image-div { height:auto; } .certificate-detail-div { min-height:105px; } }

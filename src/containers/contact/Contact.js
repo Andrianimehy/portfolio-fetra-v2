@@ -67,10 +67,29 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="contact-social">
-              <span>Retrouvez-nous également</span>
-              <SocialMedia />
-            </div>
+            <div class="contact-social">
+  <span>Retrouvez-nous également</span>
+
+  <div class="social-media-div">
+    <a
+      href="https://www.facebook.com/TON-PAGE"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Notre page Facebook"
+    >
+      <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a
+      href="https://www.instagram.com/TON-COMPTE/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Notre compte Instagram"
+    >
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+</div>
           </div>
 
           <div className={isDark ? "contact-form-card dark-mode" : "contact-form-card"}>
