@@ -38,7 +38,7 @@ const heroSlider = [
     primaryHref: "#projects",
     secondaryLabel: "Nous contacter",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-web.png"),
+    background: require("./assets/images/hero-web.webp"),
     backgroundPosition: "center center",
     backgroundSize: "cover"
   },
@@ -224,19 +224,19 @@ const bigProjects = {
 
   projects: [
     {
-      image: require("./assets/images/expertise-fullstack.png"),
+      image: require("./assets/images/expertise-fullstack.webp"),
       projectName: "Développement Full Stack",
       projectDesc:
         "Applications web modernes avec React, TypeScript, Node.js et APIs REST."
     },
     {
-      image: require("./assets/images/expertise-ecommerce.png"),
+      image: require("./assets/images/expertise-ecommerce.webp"),
       projectName: "E-commerce",
       projectDesc:
         "Création, personnalisation et maintenance de boutiques Shopify, Magento, PrestaShop et WooCommerce."
     },
     {
-      image: require("./assets/images/expertise-api.png"),
+      image: require("./assets/images/expertise-api.webp"),
       projectName: "Backend & API",
       projectDesc:
         "APIs REST, authentification et intégration de services externes fiables et évolutives."
@@ -269,7 +269,7 @@ const achievementSection = {
       title: "KOTI Collection",
       description:
         "Boutique e-commerce Magento conçue pour valoriser les produits, optimiser l’expérience d’achat et offrir une navigation fluide sur tous les écrans.",
-      image: require("./assets/images/project-koti.png"),
+      image: require("./assets/images/project-koti.webp"),
       imageAlt: "KOTI Collection",
       tech: "Magento",
       footer: [
@@ -280,7 +280,7 @@ const achievementSection = {
       title: "Le Grand Barbershop",
       description:
         "Application web moderne avec catalogue et gestion des produits, pensée pour une expérience rapide et claire.",
-       image: require("./assets/images/project-barbershop.png"),
+       image: require("./assets/images/project-barbershop.webp"),
       imageAlt: "Le Grand Barbershop — React / Node.js",
       tech: "React · Node.js",
       footer: [
@@ -291,7 +291,7 @@ const achievementSection = {
       title: "Feelingz Beauty",
       description:
         "Boutique Shopify conçue pour valoriser les produits, simplifier l'achat et renforcer l'image de marque.",
-      image: require("./assets/images/project-feelingz.png"),
+      image: require("./assets/images/project-feelingz.webp"),
       imageAlt: "Feelingz Beauty — Shopify",
       tech: "Shopify",
       footer: [
@@ -303,7 +303,7 @@ const achievementSection = {
       title: "FAAME",
       description:
         "Site corporate WordPress avec espace membres, formulaire de contact et collecte de dons en ligne.",
-       image: require("./assets/images/project-faame.png"),
+       image: require("./assets/images/project-faame.webp"),
       imageAlt: "FAAME — WooCommerce",
       tech: "WordPress",
       footer: [{name: "Voir le site", url: "https://urban-shop.infy.click/?i=1"}]
@@ -312,7 +312,7 @@ const achievementSection = {
       title: "Maison Délice",
       description:
         "Plateforme e-commerce complète avec catalogue, panier, commandes et administration sous React, TypeScript et Supabase.",
-       image: require("./assets/images/project-delice.png"),
+       image: require("./assets/images/project-delice.webp"),
       imageAlt: "Maison Délice — React / Node.js / Supabase",
       tech: "React · TypeScript · Supabase",
       footer: [
@@ -323,7 +323,7 @@ const achievementSection = {
       title: "Hartmann Tresore",
       description:
         "Site e-commerce spécialisé dans les coffres-forts et solutions de sécurité pour particuliers et professionnels.",
-       image: require("./assets/images/project-hartmann.png"),
+       image: require("./assets/images/project-hartmann.webp"),
       imageAlt: "Hartmann — Magento",
       tech: "Magento",
       footer: [
