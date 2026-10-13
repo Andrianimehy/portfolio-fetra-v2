@@ -18,9 +18,9 @@ const illustration = {
 // Summary And Greeting Section
 const greeting = {
   username: "Athelstan Agency",
-  title: "Création Web & Solutions Digitales",
+  title: "Agence Web & Création de Sites Internet",
   subTitle: emoji(
-    "Nous concevons des sites web, boutiques e-commerce et applications digitales sur mesure pour accompagner les entreprises dans leur croissance."
+    "Athelstan Agency accompagne les entreprises à Madagascar et à l'international dans la création de sites web professionnels, de boutiques e-commerce et d'applications sur mesure."
   ),
   resumeLink: "",
   displayGreeting: true
