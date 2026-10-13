@@ -52,7 +52,7 @@ const heroSlider = [
     primaryHref: "#skills",
     secondaryLabel: "Demander un devis",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-ecommerce.jpg"),
+    background: require("./assets/images/hero-ecommerce.webp"),
     backgroundPosition: "center center",
     backgroundSize: "cover"
   },
@@ -66,7 +66,7 @@ const heroSlider = [
     primaryHref: "#projects",
     secondaryLabel: "Parlons de votre projet",
     secondaryHref: "#contact",
-    background: require("./assets/images/hero-fullstack.jpg"),
+    background: require("./assets/images/hero-fullstack.webp"),
     backgroundPosition: "center center",
     backgroundSize: "cover"
   }
@@ -242,13 +242,13 @@ const bigProjects = {
         "APIs REST, authentification et intégration de services externes fiables et évolutives."
     },
     {
-      image: require("./assets/images/expertise-database.png"),
+      image: require("./assets/images/expertise-database.webp"),
       projectName: "Supabase & PostgreSQL",
       projectDesc:
         "Backend, base de données, authentification et sécurité avec Supabase et PostgreSQL."
     },
     {
-      image: require("./assets/images/expertise-frontend.png"),
+      image: require("./assets/images/expertise-frontend.webp"),
       projectName: "Frontend moderne",
       projectDesc:
         "Interfaces responsives et performantes avec React, JavaScript, HTML5 et CSS3."
