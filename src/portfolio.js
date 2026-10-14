@@ -311,7 +311,7 @@ const achievementSection = {
     {
       title: "Maison Délice",
       description:
-        "Plateforme e-commerce complète avec catalogue, panier, commandes et administration sous React, TypeScript et Supabase.",
+        "Plateforme e-commerce complète avec catalogue, panier, commandes et administration produits et stock.",
        image: require("./assets/images/project-delice.webp"),
       imageAlt: "Maison Délice — React / Node.js / Supabase",
       tech: "React · TypeScript · Supabase",
@@ -379,7 +379,7 @@ const contactInfo = {
   subtitle:
     "Vous avez un projet web, une boutique e-commerce, une application ou un site à faire évoluer ? Décrivez-nous votre besoin et construisons la bonne solution ensemble.",
   number: "+261 34 14 587 73",
-  email_address: "fetranirina@gmail.com"
+  email_address: "contact@athelstan-agency.com"
 };
 
 // Twitter
