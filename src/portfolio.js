@@ -5,7 +5,7 @@ import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
 const splashScreen = {
-  enabled: true,
+  enabled: false,
   animation: splashAnimation,
   duration: 2000
 };
