@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-// import {Fade} from "react-reveal";
 import "./Greeting.scss";
 import Button from "../../components/button/Button";
 import {heroSlider, greeting} from "../../portfolio";
@@ -7,6 +6,26 @@ import {heroSlider, greeting} from "../../portfolio";
 export default function Greeting() {
   const [activeSlide, setActiveSlide] = useState(0);
 
+  // 1. PRÉCHARGEMENT DE L'IMAGE LCP (Optimisation Performance)
+  useEffect(() => {
+    if (heroSlider.length > 0 && heroSlider[0].background) {
+      const link = document.createElement("link");
+      link.rel = "preload";
+      link.as = "image";
+      link.href = heroSlider[0].background;
+      link.fetchPriority = "high"; 
+      
+      document.head.appendChild(link);
+
+      return () => {
+        if (document.head.contains(link)) {
+          document.head.removeChild(link);
+        }
+      };
+    }
+  }, []);
+
+  // 2. GESTION DU CARROUSEL
   useEffect(() => {
     if (heroSlider.length < 2) return undefined;
 
@@ -17,6 +36,7 @@ export default function Greeting() {
     return () => clearInterval(timer);
   }, []);
 
+  // 3. SÉCURITÉ D'AFFICHAGE
   if (!greeting.displayGreeting) {
     return null;
   }
@@ -27,7 +47,7 @@ export default function Greeting() {
 
   const current = heroSlider[activeSlide] || heroSlider[0];
 
-   return (
+  return (
     <section className="hero-slider" id="greeting">
       <div className="hero-slider-track">
         {heroSlider.map((slide, index) => (
@@ -54,7 +74,7 @@ export default function Greeting() {
       </button>
 
       <div className="hero-slider-content">
-        {/* On garde le key pour l'animation du texte, mais on le stabilise avec une clé fixe ou on laisse la clé du slide actif */}
+        {/* On garde key={activeSlide} pour que l'animation du texte (via CSS) fonctionne */}
         <div className="hero-slider-copy" key={activeSlide}>
           {current.eyebrow && (
             <div className="hero-slider-eyebrow">{current.eyebrow}</div>
@@ -95,6 +115,4 @@ export default function Greeting() {
       </div>
     </section>
   );
-
-
 }
